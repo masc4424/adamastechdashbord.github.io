@@ -824,3 +824,11 @@ button.big-button:active::before {
 
 
 /* <===================Close buton===================> */
+
+
+
+
+.popup.mystyle{
+  position: fixed; width: 100%; height:  calc(100% + 30px) !important; top:0; left:0; max-width: 100% !important;
+}
+
