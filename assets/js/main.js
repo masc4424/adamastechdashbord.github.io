@@ -461,3 +461,80 @@ function iconCLICKSH4() {
     x.style.display = "none";
   }
 }
+
+//<========================maximize function()===========================>
+let isMaximized = false;
+
+function max1() {
+  if (isMaximized) {
+    myDIV1.style.width = "";
+    myDIV1.style.height = "";
+    myDIV1.style.top = "";
+    myDIV1.style.left = "";
+    myDIV1.classList.remove("mystyle");
+    isMaximized = false;
+} else{
+  myDIV1.style.width = "100%";
+  myDIV1.style.height = "100%";
+  myDIV1.style.top = "0";
+  myDIV1.style.left = "0";
+  myDIV1.classList.add("mystyle");
+  isMaximized = true;
+  console.log(myDIV1);
+}
+}
+
+function max2() {
+  if (isMaximized) {
+    myDIV2.style.width = "";
+    myDIV2.style.height = "";
+    myDIV2.style.top = "";
+    myDIV2.style.left = "";
+    myDIV2.classList.remove("mystyle");
+    isMaximized = false;
+} else{
+  myDIV2.style.width = "100%";
+  myDIV2.style.height = "100%";
+  myDIV2.style.top = "0";
+  myDIV2.style.left = "0";
+  myDIV2.classList.add("mystyle");
+  isMaximized = true;
+}
+}
+
+function max3() {
+  if (isMaximized) {
+    myDIV3.style.width = "";
+    myDIV3.style.height = "";
+    myDIV3.style.top = "";
+    myDIV3.style.left = "";
+    myDIV3.classList.remove("mystyle");
+    isMaximized = false;
+  
+} else{
+  myDIV3.style.width = "100%";
+  myDIV3.style.height = "100%";
+  myDIV3.style.top = "0";
+  myDIV3.style.left = "0";
+  myDIV3.classList.add("mystyle");
+  isMaximized = true;
+}
+}
+
+function max4() {
+  if (isMaximized) {
+    myDIV4.style.width = "";
+    myDIV4.style.height = "";
+    myDIV4.style.top = "";
+    myDIV4.style.left = "";
+    myDIV4.classList.remove("mystyle");
+    isMaximized = false;
+} else{
+  myDIV4.style.width = "100%";
+  myDIV4.style.height = "100%";
+  myDIV4.style.top = "0";
+  myDIV4.style.left = "0";
+  myDIV4.classList.add("mystyle");
+  isMaximized = true;
+}
+}
