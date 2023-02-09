@@ -687,6 +687,50 @@ body {
 
 }
 
+/* <==========================Side icon specification=============================> */
+
+#dash11-color{
+  /* background: rgb(68, 65, 83); */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+#dash22-color{
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+
+
+}
+
+#dash33-color{
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+#dash44-color{
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+
+}
+
 /* .dekha{
   display: none;
 } */
