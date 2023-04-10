@@ -149,6 +149,13 @@ function initResizeElement() {
 // <==================Popup & icon Show and Hide===================>
 
 function myFunction1() {
+	var modal = document.getElementById("myModal1"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
 	var x = document.getElementById("myDIV1");
 	x.style.display = '';
 
@@ -167,6 +174,13 @@ function myFunction1() {
 }
 
 function myFunction2() {
+	var modal = document.getElementById("myModal2"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
 	var x = document.getElementById("myDIV2");
 	if (x.style.display === "none") {
 		x.style.display = "block";
@@ -187,10 +201,16 @@ function myFunction2() {
 	} else {
 		z.style.display = "none";
 	}
-
 }
 
 function myFunction3() {
+	var modal = document.getElementById("myModal3"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
 	var x = document.getElementById("myDIV3");
 	if (x.style.display === "none") {
 		x.style.display = "block";
@@ -214,6 +234,13 @@ function myFunction3() {
 }
 
 function myFunction4() {
+	var modal = document.getElementById("myModal4"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
 	var x = document.getElementById("myDIV4");
 	if (x.style.display === "none") {
 		x.style.display = "block";
