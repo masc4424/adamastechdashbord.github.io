@@ -8027,3 +8027,9 @@ align-items: center;
   margin-right: calc(var(--bs-gutter-x) * -.5);
   margin-left: calc(var(--bs-gutter-x) * -.5); */
 } */
+
+/* username */
+.user {
+  font-size: 17px;
+  margin-top: 3px;
+}
