@@ -7414,7 +7414,7 @@ body {
 }
 
 .popup {
-  z-index: 9999 !important;
+  z-index: 4;
   /* background-color: #f1f1f1; */
   border: 0;
   text-align: center;
