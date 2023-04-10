@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% load static %}
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+		name='viewport' />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+	<link rel="stylesheet" href="{% static 'css/ready.css' %}">
+
+	<!-- ============================== flash message ============================== -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+	<!-- Default theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<!----------------------- navbar ----------------------->
+			<div class="logo-header" style="height: 72px">
+				<img src="{% static 'img/adamastech_logo.png' %}" alt="" class="logo">
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+					data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="color: white;"></i></span>
+				</button>
+				<button class="topbar-toggler more"><i class="fa fa-ellipsis-v" style="color: white;"></i></button>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg">
+				<div class="container-fluid">
+					<h3 class="heading">SupportSquard</h3>
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item dropdown">
+							<div class="dropdown" data-toggle="dropdown" aria-expanded="false">
+								<div class="profile-container">
+									<div class="user-info">
+										Welcome, {{ user.first_name }}
+									</div>
+									<img src="{% url 'generate_profile_image' %}" alt="Profile Image"
+										class="profile-image">
+								</div>
+							</div>
+							<ul class="dropdown-menu dropdown-user">
+								<li>
+									<div class="user-box">
+										<div class="u-img">
+											<img src="{% url 'generate_profile_image' %}" alt="Profile Image"
+												class="profile-image-1">
+											<p>{{ user.get_full_name }}</p>
+
+										</div>
+								</li>
+								<!-- =============== admin user button ================ -->
+								{% if user.is_superuser %}
+								<div class="logouton" onclick="location.href='/admin/'"><i class="fa-solid fa-user"></i>
+									Admin</div>
+								{% endif %}
+								<!-- =============== admin user button end ================ -->
+								<div class="logout-link" onclick="logout(event)"><i class="fa fa-power-off"></i> Logout
+								</div>
+							</ul>
+							<!-- /.dropdown-user -->
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- ----------------------------- sidebar icon --------------------------- -->
+		<div class="sidebar">
+			<div class="scrollbar-inner sidebar-wrapper">
+				<ul class="nav">
+					<li id="bgshhi1" style="display: none;">
+						<a onclick="iconCLICKSH1()">
+							<span style="display: none;" id="icSHOW1">
+								<div id="container11">
+									<div id="circle11">da</div>
+								</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+
+					<li id="bgshhi2" style="display: none;">
+						<a onclick="iconCLICKSH2()">
+							<span style="display: none;" id="icSHOW2">
+								<div id="container12">
+									<div id="circle12">ST</div>
+								</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+
+					<li id="bgshhi3" style="display: none;">
+						<a onclick="iconCLICKSH3()">
+							<span style="display: none;" id="icSHOW3">
+								<div id="container13">
+									<div id="circle13">ZK</div>
+								</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+
+					<li id="bgshhi4" style="display: none;">
+						<a onclick="iconCLICKSH4()">
+							<span style="display: none;" id="icSHOW4">
+								<div id="container14">
+									<div id="circle14">FH</div>
+								</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+
+					<li id="bgshhi5" style="padding-left: 11px; padding-top: 20px; display: none;">
+						<a onclick="iconCLICKSH5()">
+							<span style="display: none;" id="icSHOW5">
+								<div id="dash55-color">TU</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+
+					<li id="bgshhi6" style="padding-left: 11px; padding-top: 20px; display: none;">
+						<a onclick="iconCLICKSH6()">
+							<span style="display: none;" id="icSHOW6">
+								<div id="dash66-color">GU</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-------------------------------------------------- main panel start --------------------------------------------------->
+		<div class="main-panel">
+			<div class="content">
+				<div class="container-fluid">
+
+					<!------------------------------------------- card alignment start --------------------------------------->
+					<div class="row">
+						<div class="col-md-8">
+							<div class="row">
+								<!-- ====================== First Card Start =============================== -->
+								<div class="col-md-6">
+									<div class="card card-stats card-warning">
+										<div class="card-body" data-toggle="modal" data-target="#myModal1">
+											<div class="row">
+												<div class="col-7 alignicon">
+													<div class="numbers">1,504</div>
+													<div class="cardName"
+														style="font-size: 15px; padding-bottom: 30px; padding-top: 6px; color: #333;">
+														PAYMENT AND REGISTRATION</div>
+												</div>
+												<div class="col-5 iconBx d-flex">
+													<img src="{% static 'img/payment.png' %}" class="iconBx"
+														height="70px" width="70px" style="background: none;">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Payment Modal -->
+								<div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+									aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="myModalLabel">Payment and registration</h5>
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<table class="table">
+													<tbody id="tableBody1">
+														<tr>
+															<td></td>
+															<td>Payment status</td>
+															<td><span class="dot dot-green"></span> Active</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction1()">view</button></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>ECOM to SMS</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction1()">view</button></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- ========popup======================= -->
+								<div class="popup" id="myDIV1" style="display: none;">
+									<div class="popup-header"
+										style="background-color: #30305c; font-family: Ubuntu, sans-serif;">
+										<div class="d-flex">
+											<div id="container" class="dash-setup">
+												<div id="circle">DA</div>
+												<span style="padding-left: 10px;">Click here to move</span>
+											</div>
+
+											<div class="bttn-area">
+												<button
+													style="float: right;border: none;background: none;padding-left: 6px;"
+													onclick="closeKARO1()"><i class="fa-solid fa-xmark"
+														style=" border: 5px solid red; border-radius: 40px; background-color: red; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+												<button
+													style="float: right;border: none;background: none;padding-left: 6px;"
+													onclick="max1()"><i onclick="changeIcon1()" id="icon1"
+														class="fa-regular fa-square"
+														style=" border: 5px solid rgba(243, 239, 26, 0.911); border-radius: 40px; background-color: yellow; color: rgb(187, 175, 175);  height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+												<button style="float: right;border: none;background: none;"
+													onclick="hideeye()"><i class="fa-solid fa-minus fa-1x"
+														style="border: 5px solid green; border-radius: 40px; background-color: green; color: white;  height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+											</div>
+
+										</div>
+										<p><img
+												src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif">
+										</p>
+									</div>
+								</div>
+								<!----------------------- first card end----------------------->
+								<!----------------------- second card ----------------------->
+
+								<div class="col-md-6">
+									<div class="card card-stats card-success">
+										<div class="card-body" data-toggle="modal" data-target="#myModal2">
+											<div class="row">
+												<div class="col-7 alignicon">
+													<div class="numbers" style="color: red; font-size: 25px;">1,504
+													</div>
+													<div class="cardName"
+														style="font-size: 15px; padding-bottom: 30px; padding-top: 6px; color: #333;">
+														SMS-LMS SYNC
+													</div>
+												</div>
+												<div class="col-5 iconBx d-flex">
+													<img src="{% static 'img/registration.png' %}"
+														class="iconBx height=" 70px" width="70px"
+														style="background: none;">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- SMS-LMS Modal -->
+								<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+									aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="myModalLabel">SMS-LMS Sync</h5>
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<table class="table">
+													<tbody id="tableBody2">
+														<tr>
+															<td></td>
+															<td>Batch transfer</td>
+															<td><span class="dot dot-green"></span> Active</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction2()">view</button></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>Student Registration</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction2()">view</button></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>New batch creation</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction2()">view</button></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>Batch modification</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction2()">view</button></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>Customer ID mismatch</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction2()">view</button></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- ============================2nd popup============================== -->
+							<div class="popup" id="myDIV2" style="display: none;">
+
+								<div class="popup-header"
+									style="background-color: #30305c; font-family: Ubuntu, sans-serif;">
+									<div class="d-flex">
+										<div id="container2" class="dash-setup">
+											<div id="circle2">ST</div>
+											<span style="padding-left: 10px;">Click here to move</span>
+										</div>
+
+										<div class="bttn-area">
+											<button
+												style="float: right;border: none;background: none;padding-left: 6px;"
+												onclick="closeKARO2()"><i class="fa-solid fa-xmark"
+													style=" border: 5px solid red; border-radius: 40px; background-color: red; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+											<button
+												style="float: right;border: none;background: none;padding-left: 6px;"
+												onclick="max2()"><i onclick="changeIcon2()" id="icon2"
+													class="fa-regular fa-square"
+													style=" border: 5px solid rgba(243, 239, 26, 0.911); border-radius: 40px; background-color: yellow; color: rgb(187, 175, 175);  height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+											<button style="float: right;border: none;background: none;"
+												onclick="hidecart()"><i class="fa-solid fa-minus fa-1x"
+													style="border: 5px solid green; border-radius: 40px; background-color: green; color: white;  height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+										</div>
+
+									</div>
+									<p><img src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif">
+									</p>
+								</div>
+							</div>
+
+
+							<!----------------------- second card end ----------------------->
+
+							<!----------------------- third card ----------------------->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="card card-stats card-danger">
+										<div class="card-body" data-toggle="modal" data-target="#myModal3">
+											<div class="row">
+												<div class="col-7 alignicon">
+													<div class="numbers"
+														style="color: rgba(128, 0, 128, 0.76); font-size: 25px;">1,504
+													</div>
+													<div class="cardName">
+														<p
+															style="font-size: 15px; padding-bottom: 15px; padding-top: 6px;padding-top: 10px; color: #333;">
+															MISCELLANEOUS </p>
+													</div>
+												</div>
+												<div class="col-5 iconBx d-flex">
+													<img src="{% static 'img/datatransferError.png' %}" class="iconBx"
+														height="
+														70px" width="70px" style="background: none;">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Miscellaneous Modal -->
+								<div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+									aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="myModalLabel">Miscellaneous</h5>
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<table class="table">
+													<tbody id="tableBody3">
+														<tr>
+															<td></td>
+															<td>SMS to Ticketing system</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction3()">view</button></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>Support System Monitoring</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction3()">view</button></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<!-- ------------------------------3rd popup--------------------------------------- -->
+
+								<div class="popup" id="myDIV3" style="display: none;">
+									<div class="popup-header"
+										style="background-color: #30305c; font-family: Ubuntu, sans-serif;">
+										<div class="d-flex">
+											<div id="container3" class="dash-setup">
+												<div id="circle3">ZK</div>
+												<span style="padding-left: 10px;">Click here to move</span>
+											</div>
+
+											<div class="bttn-area">
+												<button
+													style="float: right;border: none;background: none;padding-left: 6px;"
+													onclick="closeKARO3()"><i class="fa-solid fa-xmark"
+														style=" border: 5px solid red; border-radius: 40px; background-color: red; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+												<button
+													style="float: right;border: none;background: none;padding-left: 6px;"
+													onclick="max3()"><i onclick="changeIcon3()" id="icon3"
+														class="fa-regular fa-square"
+														style=" border: 5px solid rgba(243, 239, 26, 0.911); border-radius: 40px; background-color: yellow; color: rgb(187,175,175); height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+												<button style="float: right;border: none;background: none;"
+													onclick="hidechat()"><i class="fa-solid fa-minus fa-1x"
+														style="border: 5px solid green; border-radius: 40px; background-color: green; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+											</div>
+
+										</div>
+										<p><img
+												src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif">
+										</p>
+									</div>
+								</div>
+								<!----------------------- third card end ----------------------->
+
+								<!----------------------- fourth card ----------------------->
+								<div class="col-md-6">
+									<div class="card card-stats card-primary">
+										<div class="card-body" data-toggle="modal" data-target="#myModal4">
+											<div class="row">
+												<div class="col-7 alignicon">
+													<div class="numbers" style="color: #ff0078; font-size: 25px;">1,504
+													</div>
+													<div class="cardName"
+														style="font-size: 15px; padding-bottom: 30px; padding-top: 6px; color: #333;">
+														LMS</div>
+												</div>
+												<div class="col-5 iconBx d-flex">
+													<img src="{% static 'img/lms.png' %}" class="iconBx height=" 70px"
+														width="70px" style="background: none;">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- LMS Modal -->
+								<div class="modal fade" id="myModal4" tabindex="-1" role="dialog"
+									aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="myModalLabel">LMS</h5>
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<table class="table">
+													<tbody id="tableBody4">
+														<tr>
+															<td></td>
+															<td>Recording upload</td>
+															<td><span class="dot dot-green"></span> Active</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction4()">view</button></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>Class completions & license occupancy</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction4()">view</button></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>Teacher Notes</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction4()">view</button></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td>Attendance</td>
+															<td><span class="dot dot-red"></span> Inactive</td>
+															<td><button class="btn btn-primary" style="float: right;"
+																	onclick="myFunction4()">view</button></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!----------------------- fourth card end ----------------------->
+						</div>
+
+						<!-- ----------------------------4th popup--------------------------------- -->
+
+						<div class="popup" id="myDIV4" style="display: none;">
+							<div class="popup-header"
+								style="background-color: #30305c; font-family: Ubuntu, sans-serif;">
+								<div class="d-flex">
+									<div id="container4" class="dash-setup">
+										<div id="circle4">FH</div>
+										<span style="padding-left: 10px;">Click here to move</span>
+									</div>
+
+									<div class="bttn-area">
+										<button style="float: right;border: none;background: none;padding-left: 6px;"
+											onclick="closeKARO4()"><i class="fa-solid fa-xmark"
+												style=" border: 5px solid red; border-radius: 40px; background-color: red; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+										<button style="float: right;border: none;background: none;padding-left: 6px;"
+											onclick="max4()"><i onclick="changeIcon4()" id="icon4"
+												class="fa-regular fa-square"
+												style=" border: 5px solid rgba(243, 239, 26, 0.911); border-radius: 40px; background-color: yellow; color: rgb(187,175,175); height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+										<button style="float: right;border: none;background: none;"
+											onclick="hideerror()"><i class="fa-solid fa-minus fa-1x"
+												style="border: 5px solid green; border-radius: 40px; background-color: green; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+									</div>
+
+								</div>
+								<p><img src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif"></p>
+							</div>
+						</div>
+
+						<!----------------------- Annoucement card ----------------------->
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card">
+										<div class="card-header">
+											<h4 class="card-title">Announcement</h4>
+										</div>
+										<div class="card-body">
+											<marquee direction="up" scrollamount="3">
+												<ul>
+													<li>This is the first announcement.</li>
+													<li>This is the second announcement.</li>
+													<li>This is the third announcement.</li>
+													<li>This is the fourth announcement.</li>
+													<li>This is the fifth announcement.</li>
+													<li>This is the sixth announcement.</li>
+													<li>This is the seventh announcement.</li>
+													<li>This is the eighth announcement.</li>
+													<li>This is the nineth announcement.</li>
+												</ul>
+											</marquee>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!------------------------------------------- card alignment end --------------------------------------->
+
+					</div>
+				</div>
+			</div>
+			<!-------------------------------------------------- main panel end --------------------------------------------------->
+
+		</div>
+</body>
+<!-- ================================= auto generate serial number ================================== -->
+<script>
+	var tableBody = document.getElementById("tableBody1");
+	var rows = tableBody1.getElementsByTagName("tr");
+	for (var i = 0; i < rows.length; i++) {
+		var cell = rows[i].getElementsByTagName("td")[0];
+		cell.innerHTML = i + 1;
+	}
+	var tableBody = document.getElementById("tableBody2");
+	var rows = tableBody2.getElementsByTagName("tr");
+	for (var i = 0; i < rows.length; i++) {
+		var cell = rows[i].getElementsByTagName("td")[0];
+		cell.innerHTML = i + 1;
+	}
+	var tableBody = document.getElementById("tableBody3");
+	var rows = tableBody3.getElementsByTagName("tr");
+	for (var i = 0; i < rows.length; i++) {
+		var cell = rows[i].getElementsByTagName("td")[0];
+		cell.innerHTML = i + 1;
+	}
+	var tableBody = document.getElementById("tableBody4");
+	var rows = tableBody4.getElementsByTagName("tr");
+	for (var i = 0; i < rows.length; i++) {
+		var cell = rows[i].getElementsByTagName("td")[0];
+		cell.innerHTML = i + 1;
+	}
+</script>
+<!-- ================================= auto generate serial number end ================================== -->
+
+<!-- ================================= logout onclick function start ================================== -->
+<script>
+	function logout(event) {
+		event.preventDefault();
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', '{% url 'logout' %}');
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		xhr.setRequestHeader('X-CSRFToken', '{{ csrf_token }}');
+		xhr.onload = function () {
+			if (xhr.status === 200) {
+				window.location.reload();
+			}
+		};
+		xhr.send();
+	}
+</script>
+<!-- ================================= logout onclick function end ================================== -->
+
+<!-- ================================= flash message start ================================== -->
+<script>
+	{% for flashmsg in messages %}
+	alertify.set('notifier', 'position', 'top-center');
+	alertify.success('{{ flashmsg }}');
+	{% endfor %}
+</script>
+<!-- ================================= flash message end ================================== -->
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/circles/0.0.6/circles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+	integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"
+	integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://kit.fontawesome.com/bddbf16e05.js" crossorigin="anonymous"></script>
+
+<script src="{% static 'js/ready.js' %}"></script>
+
+</html>
