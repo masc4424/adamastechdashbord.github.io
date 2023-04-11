@@ -158,7 +158,7 @@
 					</li>
 					<!-- ----------------------------- second card sidebar icon end --------------------------- -->
 
-					<!-- ----------------------------- third card sidebar icon end --------------------------- -->
+					<!-- ----------------------------- third card sidebar icon start --------------------------- -->
 					<li id="bgshhi3" style="display: none;">
 						<a onclick="iconCLICKSH3()">
 							<span style="display: none;" id="icSHOW3">
@@ -188,6 +188,41 @@
 							<span style="display: none;" id="icSHOW4">
 								<div id="container14">
 									<div id="circle14">FH</div>
+								</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+					
+					<li id="bgshhi4-1" style="display: none;">
+						<a onclick="iconCLICKSH4_1()">
+							<span style="display: none;" id="icSHOW4-1">
+								<div id="container14-1">
+									<div id="circle14_1">KM</div>
+								</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+					
+
+					<li id="bgshhi4-2" style="display: none;">
+						<a onclick="iconCLICKSH4_2()">
+							<span style="display: none;" id="icSHOW4-2">
+								<div id="container14-2">
+									<div id="circle14_2">AV</div>
+								</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+
+
+					<li id="bgshhi4-3" style="display: none;">
+						<a onclick="iconCLICKSH4_3()">
+							<span style="display: none;" id="icSHOW4-3">
+								<div id="container14-3">
+									<div id="circle14_3">XM</div>
 								</div>
 							</span>
 							<span class="title"></span>
@@ -766,21 +801,21 @@
 															<td>Class completions & license occupancy</td>
 															<td><span class="dot dot-red"></span> Inactive</td>
 															<td><button class="btn btn-primary" style="float: right;"
-																	onclick="myFunction4()">view</button></td>
+																	onclick="myFunction4_1()">view</button></td>
 														</tr>
 														<tr>
 															<td></td>
 															<td>Teacher Notes</td>
 															<td><span class="dot dot-red"></span> Inactive</td>
 															<td><button class="btn btn-primary" style="float: right;"
-																	onclick="myFunction4()">view</button></td>
+																	onclick="myFunction4_2()">view</button></td>
 														</tr>
 														<tr>
 															<td></td>
 															<td>Attendance</td>
 															<td><span class="dot dot-red"></span> Inactive</td>
 															<td><button class="btn btn-primary" style="float: right;"
-																	onclick="myFunction4()">view</button></td>
+																	onclick="myFunction4_3()">view</button></td>
 														</tr>
 													</tbody>
 												</table>
@@ -822,6 +857,94 @@
 								<p><img src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif"></p>
 							</div>
 						</div>
+					<div class="popup" id="myDIV4_1" style="display: none;">
+						<div class="popup-header"
+								style="background-color: #30305c; font-family: Ubuntu, sans-serif;">
+								<div class="d-flex">
+									<div id="container4-1" class="dash-setup">
+										<div id="circle4_1">KM</div>
+										<span style="padding-left: 10px;">Click here to move</span>
+									</div>
+
+									<div class="bttn-area">
+										<button style="float: right;border: none;background: none;padding-left: 6px;"
+											onclick="closeKARO4_1()"><i class="fa-solid fa-xmark"
+												style=" border: 5px solid red; border-radius: 40px; background-color: red; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+										<button style="float: right;border: none;background: none;padding-left: 6px;"
+											onclick="max4_1()"><i onclick="changeIcon4_1()" id="icon4_1"
+												class="fa-regular fa-square"
+												style=" border: 5px solid rgba(243, 239, 26, 0.911); border-radius: 40px; background-color: yellow; color: rgb(187,175,175); height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+										<button style="float: right;border: none;background: none;"
+											onclick="hideerror_1()"><i class="fa-solid fa-minus fa-1x"
+												style="border: 5px solid green; border-radius: 40px; background-color: green; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+									</div>
+
+								</div>
+								<p><img src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif"></p>
+							</div>
+						</div>
+
+							
+							<div class="popup" id="myDIV4_2" style="display: none;">
+								<div class="popup-header"
+									style="background-color: #30305c; font-family: Ubuntu, sans-serif;">
+									<div class="d-flex">
+										<div id="container4-2" class="dash-setup">
+											<div id="circle4_2">AV</div>
+											<span style="padding-left: 10px;">Click here to move</span>
+										</div>
+	
+										<div class="bttn-area">
+											<button style="float: right;border: none;background: none;padding-left: 6px;"
+												onclick="closeKARO4_2()"><i class="fa-solid fa-xmark"
+													style=" border: 5px solid red; border-radius: 40px; background-color: red; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+	
+											<button style="float: right;border: none;background: none;padding-left: 6px;"
+												onclick="max4_2()"><i onclick="changeIcon4_2()" id="icon4_2"
+													class="fa-regular fa-square"
+													style=" border: 5px solid rgba(243, 239, 26, 0.911); border-radius: 40px; background-color: yellow; color: rgb(187,175,175); height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+	
+											<button style="float: right;border: none;background: none;"
+												onclick="hideerror_2()"><i class="fa-solid fa-minus fa-1x"
+													style="border: 5px solid green; border-radius: 40px; background-color: green; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+										</div>
+	
+									</div>
+									<p><img src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif"></p>
+								</div>
+							</div>
+
+							
+							<div class="popup" id="myDIV4_3" style="display: none;">
+								<div class="popup-header"
+									style="background-color: #30305c; font-family: Ubuntu, sans-serif;">
+									<div class="d-flex">
+										<div id="container4-3" class="dash-setup">
+											<div id="circle4_3">XM</div>
+											<span style="padding-left: 10px;">Click here to move</span>
+										</div>
+	
+										<div class="bttn-area">
+											<button style="float: right;border: none;background: none;padding-left: 6px;"
+												onclick="closeKARO4_3()"><i class="fa-solid fa-xmark"
+													style=" border: 5px solid red; border-radius: 40px; background-color: red; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+	
+											<button style="float: right;border: none;background: none;padding-left: 6px;"
+												onclick="max4_3()"><i onclick="changeIcon4_3()" id="icon4_3"
+													class="fa-regular fa-square"
+													style=" border: 5px solid rgba(243, 239, 26, 0.911); border-radius: 40px; background-color: yellow; color: rgb(187,175,175); height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+	
+											<button style="float: right;border: none;background: none;"
+												onclick="hideerror_3()"><i class="fa-solid fa-minus fa-1x"
+													style="border: 5px solid green; border-radius: 40px; background-color: green; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+										</div>
+	
+									</div>
+									<p><img src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif"></p>
+								</div>
+							</div>												   
 
 						<!----------------------- Annoucement card ----------------------->
 						<div class="col-md-4">
