@@ -447,6 +447,99 @@ function myFunction4() {
 	}
 }
 
+function myFunction4_1() {
+	var modal = document.getElementById("myModal4"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
+	var x = document.getElementById("myDIV4_1");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW4-1");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi4-1")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+}
+
+
+
+function myFunction4_2() {
+	var modal = document.getElementById("myModal4"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
+	var x = document.getElementById("myDIV4_2");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW4-2");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi4-2")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+}
+
+
+function myFunction4_3() {
+	var modal = document.getElementById("myModal4"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
+	var x = document.getElementById("myDIV4_3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW4-3");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi4-3")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+}
+
 // <===========================Icon Stay===================================>
 
 // <=========================== Icon Stay card 1===================================>
@@ -573,6 +666,45 @@ function hideerror() {
 
 	var z = document.getElementById("bgshhi4")
 	z.id = "cbg4"
+}
+
+function hideerror_1() {
+	var x = document.getElementById("myDIV4_1");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi4-1")
+	z.id = "cbg4-1"
+}
+
+
+function hideerror_2() {
+	var x = document.getElementById("myDIV4_2");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi4-2")
+	z.id = "cbg4-2"
+}
+
+
+
+function hideerror_3() {
+	var x = document.getElementById("myDIV4_3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi4-3")
+	z.id = "cbg4-3"
 }
 
 // <============================== Close Function ====================================>
@@ -884,6 +1016,99 @@ function closeKARO4() {
 	}
 }
 
+function closeKARO4_1() {
+	var x = document.getElementById("myDIV4_1");
+	if (x.style.display === "none") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW4-1");
+	if (y.style.display === "none") {
+		y.style.display = "none";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi4-1")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+
+	var w = document.getElementById("cbg4-1")
+	if (w.style.display === "none") {
+		w.style.display = "none";
+	} else {
+		w.style.display = "none";
+	}
+}
+
+
+
+function closeKARO4_2() {
+	var x = document.getElementById("myDIV4_2");
+	if (x.style.display === "none") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW4-2");
+	if (y.style.display === "none") {
+		y.style.display = "none";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi4-2")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+
+	var w = document.getElementById("cbg4-2")
+	if (w.style.display === "none") {
+		w.style.display = "none";
+	} else {
+		w.style.display = "none";
+	}
+}
+
+
+function closeKARO4_3() {
+	var x = document.getElementById("myDIV4_3");
+	if (x.style.display === "none") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW4-3");
+	if (y.style.display === "none") {
+		y.style.display = "none";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi4-3")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+
+	var w = document.getElementById("cbg4-3")
+	if (w.style.display === "none") {
+		w.style.display = "none";
+	} else {
+		w.style.display = "none";
+	}
+}
+
 // <========================icon click show ===========================>
 
 // <========================icon click show card 1 ===========================>
@@ -1012,6 +1237,44 @@ function iconCLICKSH4() {
 
 	var z = document.getElementById("cbg4")
 	z.id = "bgshhi4"
+}
+
+function iconCLICKSH4_1() {
+	var x = document.getElementById("myDIV4_1");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("cbg4-1")
+	z.id = "bgshhi4-1"
+}
+
+
+function iconCLICKSH4_2() {
+	var x = document.getElementById("myDIV4_2");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("cbg4-2")
+	z.id = "bgshhi4-2"
+}
+
+
+function iconCLICKSH4_3() {
+	var x = document.getElementById("myDIV4_3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("cbg4-3")
+	z.id = "bgshhi4-3"
 }
 
 // <======================Maximize=========================>
@@ -1220,6 +1483,63 @@ function max4() {
 	}
 }
 
+let isMaximized4_1 = false;
+function max4_1() {
+	if (isMaximized4_1) {
+		myDIV4_1.style.width = "";
+		myDIV4_1.style.height = "";
+		myDIV4_1.style.top = "";
+		myDIV4_1.style.left = "";
+		myDIV4_1.classList.remove("mystyle");
+		isMaximized4_1 = false;
+	} else {
+		myDIV4_1.style.width = "100%";
+		myDIV4_1.style.height = "100%";
+		myDIV4_1.style.top = "0";
+		myDIV4_1.style.left = "0";
+		myDIV4_1.classList.add("mystyle");
+		isMaximized4_1 = true;
+	}
+}
+
+let isMaximized4_2 = false;
+function max4_2() {
+	if (isMaximized4_2) {
+		myDIV4_2.style.width = "";
+		myDIV4_2.style.height = "";
+		myDIV4_2.style.top = "";
+		myDIV4_2.style.left = "";
+		myDIV4_2.classList.remove("mystyle");
+		isMaximized4_2 = false;
+	} else {
+		myDIV4_2.style.width = "100%";
+		myDIV4_2.style.height = "100%";
+		myDIV4_2.style.top = "0";
+		myDIV4_2.style.left = "0";
+		myDIV4_2.classList.add("mystyle");
+		isMaximized4_2 = true;
+	}
+}
+
+let isMaximized4_3 = false;
+function max4_3() {
+	if (isMaximized4_3) {
+		myDIV4_3.style.width = "";
+		myDIV4_3.style.height = "";
+		myDIV4_3.style.top = "";
+		myDIV4_3.style.left = "";
+		myDIV4_3.classList.remove("mystyle");
+		isMaximized4_3 = false;
+	} else {
+		myDIV4_3.style.width = "100%";
+		myDIV4_3.style.height = "100%";
+		myDIV4_3.style.top = "0";
+		myDIV4_3.style.left = "0";
+		myDIV4_3.classList.add("mystyle");
+		isMaximized4_3 = true;
+	}
+}
+
 //<===============================Maximize icon togle ==============================>
 
 //<=============================== Maximize icon togle (card 1) ==============================>
@@ -1333,6 +1653,41 @@ function changeIcon4() {
 	} else {
 		icon4.classList.remove("fa-window-restore");
 		icon4.classList.add("fa-square");
+	}
+}
+
+function changeIcon4_1() {
+	var icon4_1 = document.getElementById("icon4_1");
+	if (icon4_1.classList.contains("fa-square")) {
+		icon4_1.classList.remove("fa-square");
+		icon4_1.classList.add("fa-window-restore");
+	} else {
+		icon4_1.classList.remove("fa-window-restore");
+		icon4_1.classList.add("fa-square");
+	}
+}
+
+
+function changeIcon4_2() {
+	var icon4_2 = document.getElementById("icon4_2");
+	if (icon4_2.classList.contains("fa-square")) {
+		icon4_2.classList.remove("fa-square");
+		icon4_2.classList.add("fa-window-restore");
+	} else {
+		icon4_2.classList.remove("fa-window-restore");
+		icon4_2.classList.add("fa-square");
+	}
+}
+
+
+function changeIcon4_3() {
+	var icon4_3 = document.getElementById("icon4_3");
+	if (icon4_3.classList.contains("fa-square")) {
+		icon4_3.classList.remove("fa-square");
+		icon4_3.classList.add("fa-window-restore");
+	} else {
+		icon4_3.classList.remove("fa-window-restore");
+		icon4_3.classList.add("fa-square");
 	}
 }
 
@@ -1633,6 +1988,89 @@ function getHexCode(text) {
 }
 
 
+const circle4_1= document.getElementById("circle4_1");
+
+
+setInterval(function () {
+	const text = circle4_1.textContent;
+	const hex = getHexCode(text);
+	circle4_1.style.backgroundColor = hex;
+}, 500);
+
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+
+const circle4_2= document.getElementById("circle4_2");
+
+
+setInterval(function () {
+	const text = circle4_2.textContent;
+	const hex = getHexCode(text);
+	circle4_2.style.backgroundColor = hex;
+}, 500);
+
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+
+const circle4_3= document.getElementById("circle4_3");
+
+
+setInterval(function () {
+	const text = circle4_3.textContent;
+	const hex = getHexCode(text);
+	circle4_3.style.backgroundColor = hex;
+}, 500);
+
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
 // =======================================hex code for sidebar=============================
 
 // ==========================side bar icon 1 ==============================
@@ -1872,6 +2310,83 @@ setInterval(function () {
 	const text = circle14.textContent;
 	const hex = getHexCode(text);
 	circle14.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+const circle14_1 = document.getElementById("circle14_1");
+
+setInterval(function () {
+	const text = circle14_1.textContent;
+	const hex = getHexCode(text);
+	circle14_1.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+
+const circle14_2 = document.getElementById("circle14_2");
+
+setInterval(function () {
+	const text = circle14_2.textContent;
+	const hex = getHexCode(text);
+	circle14_2.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+
+const circle14_3 = document.getElementById("circle14_3");
+
+setInterval(function () {
+	const text = circle14_3.textContent;
+	const hex = getHexCode(text);
+	circle14_3.style.backgroundColor = hex;
 }, 500);
 
 function getHexCode(text) {
