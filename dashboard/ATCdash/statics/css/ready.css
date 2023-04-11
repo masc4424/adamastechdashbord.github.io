@@ -7805,6 +7805,53 @@ body {
   margin-top: 10px;
 }
 
+#bgshhi4-1 {
+  background-color: white;
+  margin-left: 5px;
+  margin-top: 10px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#cbg4-1 {
+  /*background-color: #990099;*/
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+#bgshhi4-2 {
+  background-color: white;
+  margin-left: 5px;
+  margin-top: 10px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#cbg4-2 {
+  /*background-color: #990099;*/
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+#bgshhi4-3 {
+  background-color: white;
+  margin-left: 5px;
+  margin-top: 10px;
+  border-top-left-radius:25px;
+  border-bottom-left-radius:25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#cbg4-3 {
+  /*background-color: #990099;*/
+    margin-left: 5px;
+    margin-top: 10px;
+  }
 
 /* =========================hex code css============================================ */
 
@@ -8046,6 +8093,75 @@ body {
   color: #fff;
 }
 
+#container4-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  background-color: #fff; */
+}
+
+#circle4_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  /* background-color: #ccc; */
+  color: #fff;
+}
+
+#container4-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  background-color: #fff; */
+}
+
+#circle4_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  /* background-color: #ccc; */
+  color: #fff;
+}
+
+#container4-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  background-color: #fff; */
+}
+
+#circle4_3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  /* background-color: #ccc; */
+  color: #fff;
+}
+
 /* first card */
 
 #container11 {
@@ -8270,6 +8386,77 @@ body {
 }
 
 #circle14 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  /* background-color: #ccc; */
+  color: #fff;
+}
+
+#container14-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  background-color: #fff; */
+}
+
+#circle14_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  /* background-color: #ccc; */
+  color: #fff;
+}
+
+
+#container14-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  background-color: #fff; */
+}
+
+#circle14_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  /* background-color: #ccc; */
+  color: #fff;
+}
+
+
+#container14-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  background-color: #fff; */
+}
+
+#circle14_3 {
   display: flex;
   align-items: center;
   justify-content: center;
