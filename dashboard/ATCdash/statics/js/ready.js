@@ -149,37 +149,38 @@ function initResizeElement() {
 // <==================Popup & icon Show and Hide===================>
 
 function myFunction1() {
-	var modal = document.getElementById("myModal1"); 
-	modal.style.display = "none"; 
-	var backdrop = document.getElementsByClassName("modal-backdrop"); 
-	if (backdrop[0]) { 
-		backdrop[0].parentNode.removeChild(backdrop[0]); 
-	}
-
+	var modal = document.getElementById("myModal1");
+	modal.style.display = "none";
+	var backdrop = document.getElementsByClassName("modal-backdrop");
+	if (backdrop[0]) {
+	  backdrop[0].parentNode.removeChild(backdrop[0]);
+	}  
+	
 	var x = document.getElementById("myDIV1");
 	x.style.display = '';
-
+	
 	var y = document.getElementById("icSHOW1");
 	y.style.display = '';
-
+	
 	var z = document.getElementById("bgshhi1")
 	if (z.style.display === "none") {
 		z.style.display = "block";
 	} else {
 		z.style.display = "none";
 	}
-
+	
 	var w = document.getElementById("cbg1")
 	w.id = "bgshhi1"
+	
 }
 
 function myFunction2() {
-	var modal = document.getElementById("myModal2"); 
-	modal.style.display = "none"; 
-	var backdrop = document.getElementsByClassName("modal-backdrop"); 
-	if (backdrop[0]) { 
-		backdrop[0].parentNode.removeChild(backdrop[0]); 
-	}
+	var modal = document.getElementById("myModal2");
+	modal.style.display = "none";
+	var backdrop = document.getElementsByClassName("modal-backdrop");
+	if (backdrop[0]) {
+	  backdrop[0].parentNode.removeChild(backdrop[0]);
+	}  
 
 	var x = document.getElementById("myDIV2");
 	if (x.style.display === "none") {
@@ -201,14 +202,18 @@ function myFunction2() {
 	} else {
 		z.style.display = "none";
 	}
+
 }
 
+// <==================Popup & icon Show and Hide Misc===================>
+// <============================ modal 3 ==============================>
+
 function myFunction3() {
-	var modal = document.getElementById("myModal3"); 
-	modal.style.display = "none"; 
-	var backdrop = document.getElementsByClassName("modal-backdrop"); 
-	if (backdrop[0]) { 
-		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	var modal = document.getElementById("myModal3");
+	modal.style.display = "none";
+	var backdrop = document.getElementsByClassName("modal-backdrop");
+	if (backdrop[0]) {
+	  backdrop[0].parentNode.removeChild(backdrop[0]);
 	}
 
 	var x = document.getElementById("myDIV3");
@@ -233,12 +238,42 @@ function myFunction3() {
 	}
 }
 
+function my_Function3() {
+	var modal = document.getElementById("myModal3");
+	modal.style.display = "none";
+	var backdrop = document.getElementsByClassName("modal-backdrop");
+	if (backdrop[0]) {
+	  backdrop[0].parentNode.removeChild(backdrop[0]);
+	}
+
+	var x = document.getElementById("my_DIV3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("ic_SHOW3");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bg_shhi3")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+}
+
 function myFunction4() {
-	var modal = document.getElementById("myModal4"); 
-	modal.style.display = "none"; 
-	var backdrop = document.getElementsByClassName("modal-backdrop"); 
-	if (backdrop[0]) { 
-		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	var modal = document.getElementById("myModal4");
+	modal.style.display = "none";
+	var backdrop = document.getElementsByClassName("modal-backdrop");
+	if (backdrop[0]) {
+	  backdrop[0].parentNode.removeChild(backdrop[0]);
 	}
 
 	var x = document.getElementById("myDIV4");
@@ -289,6 +324,9 @@ function hidecart() {
 	z.id = "cbg2"
 }
 
+// <===========================Icon Stay===================================>
+// <============================ modal 3 ==============================>
+
 function hidechat() {
 	var x = document.getElementById("myDIV3");
 	if (x.style.display === "none") {
@@ -299,6 +337,18 @@ function hidechat() {
 
 	var z = document.getElementById("bgshhi3")
 	z.id = "cbg3"
+}
+
+function hide_chat() {
+	var x = document.getElementById("my_DIV3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("bg_shhi3")
+	z.id = "cbg_3"
 }
 
 function hideerror() {
@@ -376,6 +426,9 @@ function closeKARO2() {
 	}
 }
 
+// <==============================Close Function====================================>
+// <=========================== modal 3 ===========================>
+
 function closeKARO3() {
 	var x = document.getElementById("myDIV3");
 	if (x.style.display === "none") {
@@ -399,6 +452,36 @@ function closeKARO3() {
 	}
 
 	var w = document.getElementById("cbg3")
+	if (w.style.display === "none") {
+		w.style.display = "none";
+	} else {
+		w.style.display = "none";
+	}
+}
+
+function close_KARO3() {
+	var x = document.getElementById("my_DIV3");
+	if (x.style.display === "none") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("ic_SHOW3");
+	if (y.style.display === "none") {
+		y.style.display = "none";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bg_shhi3")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+
+	var w = document.getElementById("cbg_3")
 	if (w.style.display === "none") {
 		w.style.display = "none";
 	} else {
@@ -463,6 +546,9 @@ function iconCLICKSH2() {
 	z.id = "bgshhi2"
 }
 
+// <========================icon click show===========================>
+// <===================== MOdal 3 =====================>
+
 function iconCLICKSH3() {
 	var x = document.getElementById("myDIV3");
 	if (x.style.display === "none") {
@@ -473,6 +559,18 @@ function iconCLICKSH3() {
 
 	var z = document.getElementById("cbg3")
 	z.id = "bgshhi3"
+}
+
+function icon_CLICKSH3() {
+	var x = document.getElementById("my_DIV3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("cbg_3")
+	z.id = "bg_shhi3"
 }
 
 function iconCLICKSH4() {
@@ -529,6 +627,10 @@ function max2() {
 		isMaximized2 = true;
 	}
 }
+
+// <======================Maximize=========================>
+// <================ Support System Monitoring ================>
+
 let isMaximized3 = false;
 function max3() {
 	if (isMaximized3) {
@@ -547,6 +649,26 @@ function max3() {
 		isMaximized3 = true;
 	}
 }
+
+let isMaximized_3 = false;
+function max_3() {
+	if (isMaximized_3) {
+		my_DIV3.style.width = "";
+		my_DIV3.style.height = "";
+		my_DIV3.style.top = "";
+		my_DIV3.style.left = "";
+		my_DIV3.classList.remove("mystyle");
+		isMaximized_3 = false;
+	} else {
+		my_DIV3.style.width = "100%";
+		my_DIV3.style.height = "100%";
+		my_DIV3.style.top = "0";
+		my_DIV3.style.left = "0";
+		my_DIV3.classList.add("mystyle");
+		isMaximized_3 = true;
+	}
+}
+
 let isMaximized4 = false;
 function max4() {
 	if (isMaximized4) {
@@ -590,6 +712,9 @@ function changeIcon2() {
 	}
 }
 
+//<===============================Maximize icon togle ==============================>
+//<=================== modal 3 ========================>
+
 function changeIcon3() {
 	var icon3 = document.getElementById("icon3");
 	if (icon3.classList.contains("fa-square")) {
@@ -598,6 +723,17 @@ function changeIcon3() {
 	} else {
 		icon3.classList.remove("fa-window-restore");
 		icon3.classList.add("fa-square");
+	}
+}
+
+function change_Icon3() {
+	var icon_3 = document.getElementById("icon_3");
+	if (icon_3.classList.contains("fa-square")) {
+		icon_3.classList.remove("fa-square");
+		icon_3.classList.add("fa-window-restore");
+	} else {
+		icon_3.classList.remove("fa-window-restore");
+		icon_3.classList.add("fa-square");
 	}
 }
 
@@ -694,6 +830,7 @@ function getHexCode(text) {
 }
 
 // ==================3rd popup ZK========================
+// ============== SMS to Ticketing system ===============
 const circle3 = document.getElementById("circle3");
 
 
@@ -720,6 +857,37 @@ function getHexCode(text) {
 
 	return `#${hex}`;
 }
+
+// ============ Support System Monitoring =============
+
+const circle_3 = document.getElementById("circle-3");
+
+
+setInterval(function () {
+	const text = circle_3.textContent;
+	const hex = getHexCode(text);
+	circle_3.style.backgroundColor = hex;
+}, 500);
+
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+
 // ==================4th popup FH========================
 const circle4 = document.getElementById("circle4");
 
@@ -803,6 +971,7 @@ function getHexCode(text) {
 }
 
 // ============================side bar icon 3=========================
+// ================== SMS to Ticketing System =========================
 
 const circle13 = document.getElementById("circle13");
 
@@ -829,6 +998,32 @@ function getHexCode(text) {
 	return `#${hex}`;
 }
 
+// ======================= Support System Monitoring ========================
+
+const circle_13 = document.getElementById("circle_13");
+
+setInterval(function () {
+	const text = circle_13.textContent;
+	const hex = getHexCode(text);
+	circle_13.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
 
 // ============================side bar icon 4=========================
 
