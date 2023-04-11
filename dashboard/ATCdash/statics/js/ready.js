@@ -146,67 +146,214 @@ function initResizeElement() {
 
 // <================== Show & Hide ======================>
 
-// <==================Popup & icon Show and Hide===================>
+// <================== Popup & icon Show and Hide ===================>
+
+// <================== Popup & icon Show and Hide (Payment and registration) ===================>
 
 function myFunction1() {
-	var modal = document.getElementById("myModal1");
-	modal.style.display = "none";
-	var backdrop = document.getElementsByClassName("modal-backdrop");
-	if (backdrop[0]) {
-	  backdrop[0].parentNode.removeChild(backdrop[0]);
-	}  
-	
+	var modal = document.getElementById("myModal1"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
 	var x = document.getElementById("myDIV1");
 	x.style.display = '';
-	
+
 	var y = document.getElementById("icSHOW1");
 	y.style.display = '';
-	
+
 	var z = document.getElementById("bgshhi1")
 	if (z.style.display === "none") {
 		z.style.display = "block";
 	} else {
 		z.style.display = "none";
 	}
-	
+
 	var w = document.getElementById("cbg1")
 	w.id = "bgshhi1"
-	
 }
 
-function myFunction2() {
-	var modal = document.getElementById("myModal2");
-	modal.style.display = "none";
-	var backdrop = document.getElementsByClassName("modal-backdrop");
-	if (backdrop[0]) {
-	  backdrop[0].parentNode.removeChild(backdrop[0]);
-	}  
+function my_Function1() {
 
-	var x = document.getElementById("myDIV2");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	} else {
-		x.style.display = "none";
+	var modal = document.getElementById("myModal1"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
 	}
 
-	var y = document.getElementById("icSHOW2");
-	if (y.style.display === "none") {
-		y.style.display = "block";
-	} else {
-		y.style.display = "none";
-	}
+	var x = document.getElementById("myDIV11");
+	x.style.display = '';
 
-	var z = document.getElementById("bgshhi2")
+	var y = document.getElementById("ic_SHOW1");
+	y.style.display = '';
+
+	var z = document.getElementById("bg_shhi1")
 	if (z.style.display === "none") {
 		z.style.display = "block";
 	} else {
 		z.style.display = "none";
 	}
 
+	var w = document.getElementById("cbg_1")
+	w.id = "bg_shhi1"
 }
 
-// <==================Popup & icon Show and Hide Misc===================>
-// <============================ modal 3 ==============================>
+// <================== Popup & icon Show and Hide (SMS-LMS Sync) ===================>
+
+function myFunction2_1() {
+	var modal = document.getElementById("myModal2"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
+	var x = document.getElementById("myDIV2_1");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-1");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-1")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+}
+
+function myFunction2_2() {
+	var modal = document.getElementById("myModal2"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
+	var x = document.getElementById("myDIV2_2");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-2");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-2")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+}
+
+function myFunction2_3() {
+	var modal = document.getElementById("myModal2"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
+	var x = document.getElementById("myDIV2_3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-3");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-3")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+}
+
+function myFunction2_4() {
+	var modal = document.getElementById("myModal2"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
+	var x = document.getElementById("myDIV2_4");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-4");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-4")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+}
+
+function myFunction2_5() {
+	var modal = document.getElementById("myModal2"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
+	}
+
+	var x = document.getElementById("myDIV2_5");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-5");
+	if (y.style.display === "none") {
+		y.style.display = "block";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-5")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+}
+
+// <================== Popup & icon Show and Hide (MISCELLANEOUS) ===================>
 
 function myFunction3() {
 	var modal = document.getElementById("myModal3");
@@ -268,12 +415,14 @@ function my_Function3() {
 	}
 }
 
+// <================== Popup & icon Show and Hide (LMS) ===================>
+
 function myFunction4() {
-	var modal = document.getElementById("myModal4");
-	modal.style.display = "none";
-	var backdrop = document.getElementsByClassName("modal-backdrop");
-	if (backdrop[0]) {
-	  backdrop[0].parentNode.removeChild(backdrop[0]);
+	var modal = document.getElementById("myModal4"); 
+	modal.style.display = "none"; 
+	var backdrop = document.getElementsByClassName("modal-backdrop"); 
+	if (backdrop[0]) { 
+		backdrop[0].parentNode.removeChild(backdrop[0]); 
 	}
 
 	var x = document.getElementById("myDIV4");
@@ -300,6 +449,7 @@ function myFunction4() {
 
 // <===========================Icon Stay===================================>
 
+// <=========================== Icon Stay card 1===================================>
 function hideeye() {
 	var x = document.getElementById("myDIV1");
 	if (x.style.display === "none") {
@@ -312,20 +462,80 @@ function hideeye() {
 	z.id = "cbg1"
 }
 
-function hidecart() {
-	var x = document.getElementById("myDIV2");
+function hide_eye() {
+	var x = document.getElementById("myDIV11");
 	if (x.style.display === "none") {
 		x.style.display = "block";
 	} else {
 		x.style.display = "none";
 	}
 
-	var z = document.getElementById("bgshhi2")
-	z.id = "cbg2"
+	var z = document.getElementById("bg_shhi1")
+	z.id = "cbg_1"
 }
 
-// <===========================Icon Stay===================================>
-// <============================ modal 3 ==============================>
+// <=========================== Icon Stay card 2 ===================================>
+function hidecart_1() {
+	var x = document.getElementById("myDIV2_1");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-1")
+	z.id = "cbg2-1"
+}
+
+function hidecart_2() {
+	var x = document.getElementById("myDIV2_2");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-2")
+	z.id = "cbg2-2"
+}
+
+function hidecart_3() {
+	var x = document.getElementById("myDIV2_3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-3")
+	z.id = "cbg2-3"
+}
+
+function hidecart_4() {
+	var x = document.getElementById("myDIV2_4");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-4")
+	z.id = "cbg2-4"
+}
+
+function hidecart_5() {
+	var x = document.getElementById("myDIV2_5");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-5")
+	z.id = "cbg2-5"
+}
+
+// <=========================== Icon Stay card 3 ===================================>
 
 function hidechat() {
 	var x = document.getElementById("myDIV3");
@@ -351,6 +561,8 @@ function hide_chat() {
 	z.id = "cbg_3"
 }
 
+// <=========================== Icon Stay card 4 ===================================>
+
 function hideerror() {
 	var x = document.getElementById("myDIV4");
 	if (x.style.display === "none") {
@@ -363,7 +575,9 @@ function hideerror() {
 	z.id = "cbg4"
 }
 
-// <==============================Close Function====================================>
+// <============================== Close Function ====================================>
+
+// <============================== Close Function card 1 ====================================>
 
 function closeKARO1() {
 	var x = document.getElementById("myDIV1");
@@ -395,30 +609,29 @@ function closeKARO1() {
 	}
 }
 
-
-function closeKARO2() {
-	var x = document.getElementById("myDIV2");
+function close_KARO1() {
+	var x = document.getElementById("myDIV11");
 	if (x.style.display === "none") {
 		x.style.display = "none";
 	} else {
 		x.style.display = "none";
 	}
 
-	var y = document.getElementById("icSHOW2");
+	var y = document.getElementById("ic_SHOW1");
 	if (y.style.display === "none") {
 		y.style.display = "none";
 	} else {
 		y.style.display = "none";
 	}
 
-	var z = document.getElementById("bgshhi2")
+	var z = document.getElementById("bg_shhi1")
 	if (z.style.display === "none") {
 		z.style.display = "block";
 	} else {
 		z.style.display = "none";
 	}
 
-	var w = document.getElementById("cbg2")
+	var w = document.getElementById("cbg_1")
 	if (w.style.display === "none") {
 		w.style.display = "none";
 	} else {
@@ -426,8 +639,158 @@ function closeKARO2() {
 	}
 }
 
-// <==============================Close Function====================================>
-// <=========================== modal 3 ===========================>
+// <============================== Close Function card 2 ====================================>
+function closeKARO2_1() {
+	var x = document.getElementById("myDIV2_1");
+	if (x.style.display === "none") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-1");
+	if (y.style.display === "none") {
+		y.style.display = "none";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-1")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+
+	var w = document.getElementById("cbg2-1")
+	if (w.style.display === "none") {
+		w.style.display = "none";
+	} else {
+		w.style.display = "none";
+	}
+}
+
+function closeKARO2_2() {
+	var x = document.getElementById("myDIV2_2");
+	if (x.style.display === "none") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-2");
+	if (y.style.display === "none") {
+		y.style.display = "none";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-2")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+
+	var w = document.getElementById("cbg2-2")
+	if (w.style.display === "none") {
+		w.style.display = "none";
+	} else {
+		w.style.display = "none";
+	}
+}
+
+function closeKARO2_3() {
+	var x = document.getElementById("myDIV2_3");
+	if (x.style.display === "none") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-3");
+	if (y.style.display === "none") {
+		y.style.display = "none";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-3")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+
+	var w = document.getElementById("cbg2-3")
+	if (w.style.display === "none") {
+		w.style.display = "none";
+	} else {
+		w.style.display = "none";
+	}
+}
+
+function closeKARO2_4() {
+	var x = document.getElementById("myDIV2_4");
+	if (x.style.display === "none") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-4");
+	if (y.style.display === "none") {
+		y.style.display = "none";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-4")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+
+	var w = document.getElementById("cbg2-4")
+	if (w.style.display === "none") {
+		w.style.display = "none";
+	} else {
+		w.style.display = "none";
+	}
+}
+
+function closeKARO2_5() {
+	var x = document.getElementById("myDIV2_5");
+	if (x.style.display === "none") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "none";
+	}
+
+	var y = document.getElementById("icSHOW2-5");
+	if (y.style.display === "none") {
+		y.style.display = "none";
+	} else {
+		y.style.display = "none";
+	}
+
+	var z = document.getElementById("bgshhi2-5")
+	if (z.style.display === "none") {
+		z.style.display = "block";
+	} else {
+		z.style.display = "none";
+	}
+
+	var w = document.getElementById("cbg2-5")
+	if (w.style.display === "none") {
+		w.style.display = "none";
+	} else {
+		w.style.display = "none";
+	}
+}
+
+// <============================== Close Function card 3 ====================================>
 
 function closeKARO3() {
 	var x = document.getElementById("myDIV3");
@@ -489,6 +852,8 @@ function close_KARO3() {
 	}
 }
 
+// <============================== Close Function card 4 ====================================>
+
 function closeKARO4() {
 	var x = document.getElementById("myDIV4");
 	if (x.style.display === "none") {
@@ -519,8 +884,9 @@ function closeKARO4() {
 	}
 }
 
+// <========================icon click show ===========================>
 
-// <========================icon click show===========================>
+// <========================icon click show card 1 ===========================>
 
 function iconCLICKSH1() {
 	var x = document.getElementById("myDIV1");
@@ -534,20 +900,81 @@ function iconCLICKSH1() {
 	z.id = "bgshhi1"
 }
 
-function iconCLICKSH2() {
-	var x = document.getElementById("myDIV2");
+function icon_CLICKSH1() {
+	var x = document.getElementById("myDIV11");
 	if (x.style.display === "none") {
 		x.style.display = "block";
 	} else {
 		x.style.display = "none";
 	}
 
-	var z = document.getElementById("cbg2")
-	z.id = "bgshhi2"
+	var z = document.getElementById("cbg_1")
+	z.id = "bg_shhi1"
 }
 
-// <========================icon click show===========================>
-// <===================== MOdal 3 =====================>
+// <========================icon click show card 2 ===========================>
+
+function iconCLICKSH2_1() {
+	var x = document.getElementById("myDIV2_1");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("cbg2-1")
+	z.id = "bgshhi2-1"
+}
+
+function iconCLICKSH2_2() {
+	var x = document.getElementById("myDIV2_2");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("cbg2-2")
+	z.id = "bgshhi2-2"
+}
+
+function iconCLICKSH2_3() {
+	var x = document.getElementById("myDIV2_3");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("cbg2-3")
+	z.id = "bgshhi2-3"
+}
+
+function iconCLICKSH2_4() {
+	var x = document.getElementById("myDIV2_4");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("cbg2-4")
+	z.id = "bgshhi2-4"
+}
+
+function iconCLICKSH2_5() {
+	var x = document.getElementById("myDIV2_5");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+
+	var z = document.getElementById("cbg2-5")
+	z.id = "bgshhi2-5"
+}
+
+// <========================icon click show card 3 ===========================>
 
 function iconCLICKSH3() {
 	var x = document.getElementById("myDIV3");
@@ -573,6 +1000,8 @@ function icon_CLICKSH3() {
 	z.id = "bg_shhi3"
 }
 
+// <========================icon click show card 4 ===========================>
+
 function iconCLICKSH4() {
 	var x = document.getElementById("myDIV4");
 	if (x.style.display === "none") {
@@ -587,6 +1016,7 @@ function iconCLICKSH4() {
 
 // <======================Maximize=========================>
 
+// <====================== Maximize card 1 =========================>
 let isMaximized1 = false;
 function max1() {
 
@@ -609,27 +1039,127 @@ function max1() {
 	}
 
 }
-let isMaximized2 = false;
-function max2() {
-	if (isMaximized2) {
-		myDIV2.style.width = "";
-		myDIV2.style.height = "";
-		myDIV2.style.top = "";
-		myDIV2.style.left = "";
-		myDIV2.classList.remove("mystyle");
-		isMaximized2 = false;
+
+let isMaximized11 = false;
+function max11() {
+
+	if (isMaximized11) {
+
+		myDIV11.style.width = "";
+		myDIV11.style.height = "";
+		myDIV11.style.top = "";
+		myDIV11.style.left = "";
+		myDIV11.classList.remove("mystyle");
+		isMaximized11 = false;
+	}
+	else {
+		myDIV11.style.width = "100%";
+		myDIV11.style.height = "100%";
+		myDIV11.style.top = "0";
+		myDIV11.style.left = "0";
+		myDIV11.classList.add("mystyle");
+		isMaximized11 = true;
+	}
+
+}
+
+// <====================== Maximize card 2 =========================>
+let isMaximized2_1 = false;
+function max2_1() {
+	if (isMaximized2_1) {
+		myDIV2_1.style.width = "";
+		myDIV2_1.style.height = "";
+		myDIV2_1.style.top = "";
+		myDIV2_1.style.left = "";
+		myDIV2_1.classList.remove("mystyle");
+		isMaximized2_1 = false;
 	} else {
-		myDIV2.style.width = "100%";
-		myDIV2.style.height = "100%";
-		myDIV2.style.top = "0";
-		myDIV2.style.left = "0";
-		myDIV2.classList.add("mystyle");
-		isMaximized2 = true;
+		myDIV2_1.style.width = "100%";
+		myDIV2_1.style.height = "100%";
+		myDIV2_1.style.top = "0";
+		myDIV2_1.style.left = "0";
+		myDIV2_1.classList.add("mystyle");
+		isMaximized2_1 = true;
 	}
 }
 
-// <======================Maximize=========================>
-// <================ Support System Monitoring ================>
+let isMaximized2_2 = false;
+function max2_2() {
+	if (isMaximized2_2) {
+		myDIV2_2.style.width = "";
+		myDIV2_2.style.height = "";
+		myDIV2_2.style.top = "";
+		myDIV2_2.style.left = "";
+		myDIV2_2.classList.remove("mystyle");
+		isMaximized2_2 = false;
+	} else {
+		myDIV2_2.style.width = "100%";
+		myDIV2_2.style.height = "100%";
+		myDIV2_2.style.top = "0";
+		myDIV2_2.style.left = "0";
+		myDIV2_2.classList.add("mystyle");
+		isMaximized2_2 = true;
+	}
+}
+
+let isMaximized2_3 = false;
+function max2_3() {
+	if (isMaximized2_3) {
+		myDIV2_3.style.width = "";
+		myDIV2_3.style.height = "";
+		myDIV2_3.style.top = "";
+		myDIV2_3.style.left = "";
+		myDIV2_3.classList.remove("mystyle");
+		isMaximized2_3 = false;
+	} else {
+		myDIV2_3.style.width = "100%";
+		myDIV2_3.style.height = "100%";
+		myDIV2_3.style.top = "0";
+		myDIV2_3.style.left = "0";
+		myDIV2_3.classList.add("mystyle");
+		isMaximized2_3 = true;
+	}
+}
+
+let isMaximized2_4 = false;
+function max2_4() {
+	if (isMaximized2_4) {
+		myDIV2_4.style.width = "";
+		myDIV2_4.style.height = "";
+		myDIV2_4.style.top = "";
+		myDIV2_4.style.left = "";
+		myDIV2_4.classList.remove("mystyle");
+		isMaximized2_4 = false;
+	} else {
+		myDIV2_4.style.width = "100%";
+		myDIV2_4.style.height = "100%";
+		myDIV2_4.style.top = "0";
+		myDIV2_4.style.left = "0";
+		myDIV2_4.classList.add("mystyle");
+		isMaximized2_4 = true;
+	}
+}
+
+let isMaximized2_5 = false;
+function max2_5() {
+	if (isMaximized2_5) {
+		myDIV2_5.style.width = "";
+		myDIV2_5.style.height = "";
+		myDIV2_5.style.top = "";
+		myDIV2_5.style.left = "";
+		myDIV2_5.classList.remove("mystyle");
+		isMaximized2_5 = false;
+	} else {
+		myDIV2_5.style.width = "100%";
+		myDIV2_5.style.height = "100%";
+		myDIV2_5.style.top = "0";
+		myDIV2_5.style.left = "0";
+		myDIV2_5.classList.add("mystyle");
+		isMaximized2_5 = true;
+	}
+}
+
+// <====================== Maximize card 3 =========================>
 
 let isMaximized3 = false;
 function max3() {
@@ -669,6 +1199,8 @@ function max_3() {
 	}
 }
 
+// <====================== Maximize card 4 =========================>
+
 let isMaximized4 = false;
 function max4() {
 	if (isMaximized4) {
@@ -690,6 +1222,7 @@ function max4() {
 
 //<===============================Maximize icon togle ==============================>
 
+//<=============================== Maximize icon togle (card 1) ==============================>
 function changeIcon1() {
 	var icon1 = document.getElementById("icon1");
 	if (icon1.classList.contains("fa-square")) {
@@ -701,20 +1234,73 @@ function changeIcon1() {
 	}
 }
 
-function changeIcon2() {
-	var icon2 = document.getElementById("icon2");
-	if (icon2.classList.contains("fa-square")) {
-		icon2.classList.remove("fa-square");
-		icon2.classList.add("fa-window-restore");
+function change_Icon1() {
+	var icon_1 = document.getElementById("icon_1");
+	if (icon_1.classList.contains("fa-square")) {
+		icon_1.classList.remove("fa-square");
+		icon_1.classList.add("fa-window-restore");
+	} else {
+		icon_1.classList.remove("fa-window-restore");
+		icon_1.classList.add("fa-square");
+	}
+}
+
+//<=============================== Maximize icon togle (card 2) ==============================>
+function changeIcon2_1() {
+	var icon2_1 = document.getElementById("icon2_1");
+	if (icon2_1.classList.contains("fa-square")) {
+		icon2_1.classList.remove("fa-square");
+		icon2_1.classList.add("fa-window-restore");
+	} else {
+		icon2_1.classList.remove("fa-window-restore");
+		icon2_1.classList.add("fa-square");
+	}
+}
+
+function changeIcon2_2() {
+	var icon2_2 = document.getElementById("icon2_2");
+	if (icon2_2.classList.contains("fa-square")) {
+		icon2_2.classList.remove("fa-square");
+		icon2_2.classList.add("fa-window-restore");
+	} else {
+		icon2_2.classList.remove("fa-window-restore");
+		icon2_2.classList.add("fa-square");
+	}
+}
+
+function changeIcon2_3() {
+	var icon2_3 = document.getElementById("icon2_3");
+	if (icon2_3.classList.contains("fa-square")) {
+		icon2_3.classList.remove("fa-square");
+		icon2_3.classList.add("fa-window-restore");
+	} else {
+		icon2_3.classList.remove("fa-window-restore");
+		icon2_3.classList.add("fa-square");
+	}
+}
+
+function changeIcon2_4() {
+	var icon2_4 = document.getElementById("icon2_4");
+	if (icon2_4.classList.contains("fa-square")) {
+		icon2_4.classList.remove("fa-square");
+		icon2_4.classList.add("fa-window-restore");
+	} else {
+		icon2_4.classList.remove("fa-window-restore");
+		icon2_4.classList.add("fa-square");
+	}
+}
+
+function changeIcon2_5() {
+	var icon2_5 = document.getElementById("icon2_5");
+	if (icon2_5.classList.contains("fa-square")) {
+		icon2_5.classList.remove("fa-square");
+		icon2_5.classList.add("fa-window-restore");
 	} else {
 		icon2.classList.remove("fa-window-restore");
 		icon2.classList.add("fa-square");
 	}
 }
-
-//<===============================Maximize icon togle ==============================>
-//<=================== modal 3 ========================>
-
+//<=============================== Maximize icon togle (card 3) ==============================>
 function changeIcon3() {
 	var icon3 = document.getElementById("icon3");
 	if (icon3.classList.contains("fa-square")) {
@@ -736,6 +1322,8 @@ function change_Icon3() {
 		icon_3.classList.add("fa-square");
 	}
 }
+
+//<=============================== Maximize icon togle (card 4) ==============================>
 
 function changeIcon4() {
 	var icon4 = document.getElementById("icon4");
@@ -773,9 +1361,10 @@ $(function () { $('[data-toggle="tooltip"]').tooltip() }), jQuery(document).read
 })
 
 // ======================================= hex code in popup ==========================
-// ==================first popup DA========================
-const circle = document.getElementById("circle");
 
+// ================== first popup ========================
+
+const circle = document.getElementById("circle");
 
 setInterval(function () {
 	const text = circle.textContent;
@@ -801,14 +1390,40 @@ function getHexCode(text) {
 	return `#${hex}`;
 }
 
-// ==================2nd popup ST========================
-const circle2 = document.getElementById("circle2");
+const circle_1 = document.getElementById("circle_1");
+
+setInterval(function () {
+	const text = circle_1.textContent;
+	const hex = getHexCode(text);
+	circle_1.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+// ================== second popup ========================
+
+const circle2_1 = document.getElementById("circle2-1");
 
 
 setInterval(function () {
-	const text = circle2.textContent;
+	const text = circle2_1.textContent;
 	const hex = getHexCode(text);
-	circle2.style.backgroundColor = hex;
+	circle2_1.style.backgroundColor = hex;
 }, 500);
 
 
@@ -829,8 +1444,112 @@ function getHexCode(text) {
 	return `#${hex}`;
 }
 
-// ==================3rd popup ZK========================
-// ============== SMS to Ticketing system ===============
+const circle2_2 = document.getElementById("circle2-2");
+
+setInterval(function () {
+	const text = circle2_2.textContent;
+	const hex = getHexCode(text);
+	circle2_2.style.backgroundColor = hex;
+}, 500);
+
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+const circle2_3 = document.getElementById("circle2-3");
+
+setInterval(function () {
+	const text = circle2_3.textContent;
+	const hex = getHexCode(text);
+	circle2_3.style.backgroundColor = hex;
+}, 500);
+
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+const circle2_4 = document.getElementById("circle2-4");
+
+setInterval(function () {
+	const text = circle2_4.textContent;
+	const hex = getHexCode(text);
+	circle2_4.style.backgroundColor = hex;
+}, 500);
+
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+const circle2_5 = document.getElementById("circle2-5");
+
+setInterval(function () {
+	const text = circle2_5.textContent;
+	const hex = getHexCode(text);
+	circle2_5.style.backgroundColor = hex;
+}, 500);
+
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+// ================== third popup ========================
+
 const circle3 = document.getElementById("circle3");
 
 
@@ -858,10 +1577,7 @@ function getHexCode(text) {
 	return `#${hex}`;
 }
 
-// ============ Support System Monitoring =============
-
 const circle_3 = document.getElementById("circle-3");
-
 
 setInterval(function () {
 	const text = circle_3.textContent;
@@ -887,8 +1603,8 @@ function getHexCode(text) {
 	return `#${hex}`;
 }
 
+// ================== fourth popup ========================
 
-// ==================4th popup FH========================
 const circle4 = document.getElementById("circle4");
 
 
@@ -918,6 +1634,9 @@ function getHexCode(text) {
 
 
 // =======================================hex code for sidebar=============================
+
+// ==========================side bar icon 1 ==============================
+
 const circle11 = document.getElementById("circle11");
 
 setInterval(function () {
@@ -943,14 +1662,38 @@ function getHexCode(text) {
 	return `#${hex}`;
 }
 
-// ==========================side bar icon 2==============================
-
-const circle12 = document.getElementById("circle12");
+const circle_11 = document.getElementById("circle_11");
 
 setInterval(function () {
-	const text = circle12.textContent;
+	const text = circle_11.textContent;
 	const hex = getHexCode(text);
-	circle12.style.backgroundColor = hex;
+	circle_11.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+// ==========================side bar icon 2 ==============================
+
+const circle12_1 = document.getElementById("circle12-1");
+
+setInterval(function () {
+	const text = circle12_1.textContent;
+	const hex = getHexCode(text);
+	circle12_1.style.backgroundColor = hex;
 }, 500);
 
 function getHexCode(text) {
@@ -970,8 +1713,106 @@ function getHexCode(text) {
 	return `#${hex}`;
 }
 
-// ============================side bar icon 3=========================
-// ================== SMS to Ticketing System =========================
+const circle12_2 = document.getElementById("circle12-2");
+
+setInterval(function () {
+	const text = circle12_2.textContent;
+	const hex = getHexCode(text);
+	circle12_2.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+const circle12_3 = document.getElementById("circle12-3");
+
+setInterval(function () {
+	const text = circle12_3.textContent;
+	const hex = getHexCode(text);
+	circle12_3.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+const circle12_4 = document.getElementById("circle12-4");
+
+setInterval(function () {
+	const text = circle12_4.textContent;
+	const hex = getHexCode(text);
+	circle12_4.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+
+const circle12_5 = document.getElementById("circle12-5");
+
+setInterval(function () {
+	const text = circle12_5.textContent;
+	const hex = getHexCode(text);
+	circle12_5.style.backgroundColor = hex;
+}, 500);
+
+function getHexCode(text) {
+	let hash = 0;
+
+	for (let i = 0; i < text.length; i++) {
+		hash = text.charCodeAt(i) + ((hash << 5) - hash);
+	}
+
+	let hex = "";
+
+	for (let i = 0; i < 3; i++) {
+		let value = (hash >> (i * 8)) & 0xff;
+		hex += value.toString(16).padStart(2, "0");
+	}
+
+	return `#${hex}`;
+}
+// ============================side bar icon 3 =========================
 
 const circle13 = document.getElementById("circle13");
 
@@ -998,8 +1839,6 @@ function getHexCode(text) {
 	return `#${hex}`;
 }
 
-// ======================= Support System Monitoring ========================
-
 const circle_13 = document.getElementById("circle_13");
 
 setInterval(function () {
@@ -1025,7 +1864,7 @@ function getHexCode(text) {
 	return `#${hex}`;
 }
 
-// ============================side bar icon 4=========================
+// ============================side bar icon 4 =========================
 
 const circle14 = document.getElementById("circle14");
 
