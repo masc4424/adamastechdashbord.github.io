@@ -40,7 +40,7 @@
 							<div class="dropdown" data-toggle="dropdown" aria-expanded="false">
 								<div class="profile-container">
 									<div class="user-info">
-										<b class = user> Welcome, {{ user.first_name }} </b>
+										<b class="user"> Welcome, {{ user.first_name }}</b>
 									</div>
 									<img src="{% url 'generate_profile_image' %}" alt="Profile Image"
 										class="profile-image">
@@ -96,12 +96,23 @@
 							<span class="title"></span>
 						</a>
 					</li>
-
+<!-- =================== Modal 3============================== -->
 					<li id="bgshhi3" style="display: none;">
 						<a onclick="iconCLICKSH3()">
 							<span style="display: none;" id="icSHOW3">
 								<div id="container13">
 									<div id="circle13">ZK</div>
+								</div>
+							</span>
+							<span class="title"></span>
+						</a>
+					</li>
+
+					<li id="bg_shhi3" style="display: none;">
+						<a onclick="icon_CLICKSH3()">
+							<span style="display: none;" id="ic_SHOW3">
+								<div id="container_13">
+									<div id="circle_13">SSM</div>
 								</div>
 							</span>
 							<span class="title"></span>
@@ -356,7 +367,7 @@
 							</div>
 
 
-							<!----------------------- second card end ------------------------>
+							<!----------------------- second card end ----------------------->
 
 							<!----------------------- third card ----------------------->
 							<div class="row">
@@ -410,7 +421,7 @@
 															<td>Support System Monitoring</td>
 															<td><span class="dot dot-red"></span> Inactive</td>
 															<td><button class="btn btn-primary" style="float: right;"
-																	onclick="myFunction3()">view</button></td>
+																	onclick="my_Function3()">view</button></td>
 														</tr>
 													</tbody>
 												</table>
@@ -421,7 +432,7 @@
 
 
 								<!-- ------------------------------3rd popup--------------------------------------- -->
-
+								<!-- popup 1 -->
 								<div class="popup" id="myDIV3" style="display: none;">
 									<div class="popup-header"
 										style="background-color: #30305c; font-family: Ubuntu, sans-serif;">
@@ -445,6 +456,39 @@
 
 												<button style="float: right;border: none;background: none;"
 													onclick="hidechat()"><i class="fa-solid fa-minus fa-1x"
+														style="border: 5px solid green; border-radius: 40px; background-color: green; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+											</div>
+
+										</div>
+										<p><img
+												src="https://cdn.dribbble.com/users/3593/screenshots/2475280/linechart.gif">
+										</p>
+									</div>
+								</div>
+								<!-- popup 2 -->
+								<div class="popup" id="my_DIV3" style="display: none;">
+									<div class="popup-header"
+										style="background-color: #30305c; font-family: Ubuntu, sans-serif;">
+										<div class="d-flex">
+											<div id="container-3" class="dash-setup">
+												<div id="circle-3">SSM</div>
+												<span style="padding-left: 10px;">Click here to move</span>
+											</div>
+
+											<div class="bttn-area">
+												<button
+													style="float: right;border: none;background: none;padding-left: 6px;"
+													onclick="close_KARO3()"><i class="fa-solid fa-xmark"
+														style=" border: 5px solid red; border-radius: 40px; background-color: red; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+												<button
+													style="float: right;border: none;background: none;padding-left: 6px;"
+													onclick="max_3()"><i onclick="change_Icon3()" id="icon_3"
+														class="fa-regular fa-square"
+														style=" border: 5px solid rgba(243, 239, 26, 0.911); border-radius: 40px; background-color: yellow; color: rgb(187,175,175); height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
+
+												<button style="float: right;border: none;background: none;"
+													onclick="hide_chat()"><i class="fa-solid fa-minus fa-1x"
 														style="border: 5px solid green; border-radius: 40px; background-color: green; color: white; height: 25px; width: 25px; padding-top: 4px; font-size: 0.5rem;"></i></button>
 											</div>
 
@@ -579,7 +623,6 @@
 													<li>This is the sixth announcement.</li>
 													<li>This is the seventh announcement.</li>
 													<li>This is the eighth announcement.</li>
-													<li>This is the nineth announcement.</li>
 												</ul>
 											</marquee>
 										</div>
