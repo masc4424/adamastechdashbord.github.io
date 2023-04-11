@@ -2372,7 +2372,7 @@ body {
   width: 100%;
   background: #ffffff;
   position: fixed;
-  z-index: 1001;
+  z-index: 5;
 }
 
 .main-header .logo-header {
@@ -6069,7 +6069,7 @@ body {
 .table th {
   font-size: 14px;
   border-color: #ebedf2 !important;
-/*   padding: 0.75rem !important; */
+  /* padding: 0.75rem !important; */
 }
 
 /* table full-width */
@@ -7414,7 +7414,7 @@ body {
 }
 
 .popup {
-  z-index: 4;
+  z-index: 9999;
   /* background-color: #f1f1f1; */
   border: 0;
   text-align: center;
@@ -7679,6 +7679,9 @@ body {
   margin-top: 10px;
 }
 
+/* ========================== modal 3 Misc==================== */
+/* SMS to Ticketing system */
+
 #bgshhi3 {
   background-color: white;
   margin-left: 5px;
@@ -7690,6 +7693,24 @@ body {
 }
 
 #cbg3 {
+  /*background-color: #990099;*/
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+/* Support System Monitoring */
+
+#bg_shhi3 {
+  background-color: white;
+  margin-left: 5px;
+  margin-top: 10px;
+  border-top-left-radius:25px;
+  border-bottom-left-radius:25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#cbg_3 {
   /*background-color: #990099;*/
   margin-left: 5px;
   margin-top: 10px;
@@ -7792,7 +7813,8 @@ body {
   color: #fff;
 }
 
-
+/* ========================== modal 3 Misc==================== */
+/* SMS to Ticketing system */
 #container3 {
   display: flex;
   align-items: center;
@@ -7815,6 +7837,32 @@ body {
   /* background-color: #ccc; */
   color: #fff;
 }
+
+/* Support System Monitoring */
+#container-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  background-color: #fff; */
+}
+
+#circle-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  /* background-color: #ccc; */
+  color: #fff;
+}
+
+
 
 #container4 {
   display: flex;
@@ -7885,6 +7933,8 @@ body {
   color: #fff;
 }
 
+/* =================== Modal 3 ==================== */
+
 #container13 {
   display: flex;
   align-items: center;
@@ -7894,6 +7944,29 @@ body {
 }
 
 #circle13 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  /* background-color: #ccc; */
+  color: #fff;
+}
+
+#container_13 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;
+  background-color: #fff; */
+}
+
+#circle_13 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8026,10 +8099,10 @@ align-items: center;
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) * -.5);
   margin-left: calc(var(--bs-gutter-x) * -.5); */
-} */
+/*} */
 
-/* username */
-.user {
+
+.user{
   font-size: 17px;
   margin-top: 3px;
 }
